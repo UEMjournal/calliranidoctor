@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const translate = require('google-translate-api');
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/'));
 
 app.get('/translate', (req, res) => {
   const url = 'https://snapp.doctor/consultation/obstetrician-gynecologist/';
